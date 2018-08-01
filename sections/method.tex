@@ -1,0 +1,9 @@
+\newcommand{\icount}{\textsc{icount}\xspace}
+
+To study the effects of ISAs on Power, Performance, and Area, we used several different metrics using 4 different tools and more than 10 standard benchmark applications. Followings describe the frameworks, metrics, and benchmarks used in this paper. The reader can skip this section if he/she is uninterested in these details. 
+
+\subsection{Framework} 
+To find the dynamic and static instruction count (\icount), we use a well-known open-source emulator called QuickEMUlator (QEMU). QEMU is a hosted virtual machine monitor: it emulates the machine's processor through dynamic binary translation and provides a set of different hardware and device models for the machine, enabling it to run a variety of guest operating systems. We chose QEMU primarily cause it can emulates MIPS, ARM, and RISCV ISAs in user-mode. 
+
+\noindent \textbf{Static \icount}: Static instruction count is an important metric 
+
