@@ -1,3 +1,36 @@
 \label{sec:related}
 
-related work goes here. 
+Early ISA studies are instructive but miss key changes in today’s
+microprocessors and design constraints that have shifted the ISA’s effect. We review
+previous comparisons in chronological order and observe that all prior comprehensive
+ISA studies considering commercially implemented processors focused exclusively on
+performance.
+Bhandarkar and Clark compared theMIPS and VAX ISA by comparing theM/2000 to
+the Digital VAX 8700 implementations [Bhandarkar and Clark 1991] and concluded:
+“RISC as exemplified by MIPS provides a significant processor performance advantage.”
+In another study in 1995, Bhandarkar compared the Pentium-Pro to the Alpha
+21164 [Bhandarkar 1997], again focused exclusively on performance and concluded:
+“the Pentium Pro processor achieves 80\% to 90\% of the performance of the Alpha
+21164... It uses an aggressive out-of-order design to overcome the instruction set level
+limitations of a CISC architecture. On floating-point intensive benchmarks, the Alpha
+21164 does achieve over twice the performance of the Pentium Pro processor.” Consensus
+had grown that RISC and CISC ISAs had fundamental differences that led to
+performance gaps that required aggressive microarchitecture optimization for CISC
+that only partially bridged the gap.
+Isen et al. [2009] compared the performance of Power5+ to Intel Woodcrest considering
+SPEC benchmarks and concluded that x86 matches the POWER ISA. The
+consensus was that “with aggressive microarchitectural techniques for ILP, CISC and
+RISC ISAs can be implemented to yield very similar performance.”
+Many informal studies in recent years claim the x86’s “crufty” CISC ISA incursmany
+power overheads and attribute the ARM processor’s power efficiency to the ISA.1 These
+studies suggest that the microarchitecture optimizations from the past decades have
+led to RISC and CISC cores with similar performance but that the power overheads of
+CISC are intractable.
+In light of the ISA studies from decades past, the significantly modified computing
+landscape, and the seemingly vastly different power consumption of RISC implementations
+(ARM: 1–2W, MIPS: 1–4W) to CISC implementations (x86: 5–36W), we feel there
+is need to revisit this debate with a rigorous methodology. Specifically, considering the
+multipronged importance of the metrics of power, energy, and performance, we need to
+compare RISC to CISC on those three metrics. Macro-op cracking and decades of research
+in high-performance microarchitecture techniques and compiler optimizations
+seemingly help overcome x86’s performance and code-effectiveness bottlenecks, but these approaches are not free. 
