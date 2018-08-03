@@ -62,6 +62,7 @@ Moreover, ARM has a more intelligent compiler where it can unroll and/or saves s
 \noindent 4- RISCV has a more straightforward way to handle branches (compared to ARM) which could save many cycles in hot loops in some cases. 
 
 
+
 \begin{figure*}[htb]
 	\centering
 	%\footnotesize
@@ -87,21 +88,28 @@ Moreover, ARM has a more intelligent compiler where it can unroll and/or saves s
 \noindent \textbf{Outliers}: Apart from better density (in static icount) in ARM due to combined/complex instructions, for ``basicmath'', the main reason for different dynamic icount among ISAs is due to the way \textit{long double} data type is handled (by default) in different compilers. Some used native floating point instructions for mult/div this data type, and the some used software libraries (e.g. \textit{gnu mulf3}). For ``crc32'' and ``blowfish'' the main reason for significantly lower icount in RISCV is the way an IO library (part of glibc) is implemented where in RISCV the code first checked whether an atomic lock is needed (shown in Figure~\ref{fig:libc}). 
 
 
-\begin{figure}[]
-	\centering
-	%\footnotesize
-	\includegraphics[width=1\columnwidth]{figures/libc.pdf}
-	\caption{A code snippet in C showing a same IO subroutine implemented in glibc for ARM, MIPS, and RISCV. Differences shown in red.}
-	\label{fig:libc}
-	\vspace{-1em}
-\end{figure} 
 
 Figure~\ref{fig:mix} shows the instruction mix for MiBench applications for RISCV and ARM ISAs. The mix is divided into integer/floating point instructions, loads, stores, and branches. As seen in the figure, the instruction mix is ISA-independent to first order and only changes from an application to another. 
 
 
 
+
+
 \subsection{Performance}
-Figure~\ref{fig:totCyc} shows the total number of cycles (from beginning to the end of program using same inputs) for 2 in-order and 2 out-of-order cores simulated in gem5. As seen in the figure, overall ARM in-order and out-of-order cores are faster by 5\% and 13\% over RISCV cores. To further investigate the performance, Figure~\ref{fig:ipc} shows the IPC for RISCV and ARM cores. As seen in this figure, ARM in-order and out-of-order cores have better IPC than RISCV cores by 13\% and 42\% respectively. Followings show our key findings about IPC and performance:
+Figure~\ref{fig:totCyc} shows the total number of cycles (from beginning to the end of program using same inputs) for 2 in-order and 2 out-of-order cores simulated in gem5. As seen in the figure, overall ARM in-order and out-of-order cores are faster by 5\% and 13\% over RISCV. 
+
+\begin{figure}[H]
+	\centering
+	%\footnotesize
+	\includegraphics[width=1\columnwidth]{figures/libc.pdf}
+	\caption{A code snippet in C showing a same IO subroutine implemented in glibc for ARM, MIPS, and RISCV. Differences shown in red.}
+	\label{fig:libc}
+	%\vspace{-1em}
+\end{figure} 
+
+
+To further investigate the performance, Figure~\ref{fig:ipc} shows the IPC for RISCV and ARM cores. As seen in this figure, ARM in-order and out-of-order cores have better IPC than RISCV cores by 13\% and 42\% respectively. Followings show our key findings about IPC and performance:
+
 
 \noindent \textbf{Key Findings}: 1- Looking at different statistics in gem5, we found that the main reason for lower performance in RISCV is that it uses significantly larger indirect jumps and function calls (more than 100x!). This, in turn, leads to a poor branch prediction accuracy and results in a large number of wasted/squashed cycles due to branch mispredictions. We didn't find anything fundamentally wrong with RISCV ISA that could cause this and we believe this problem is mainly due to the RISCV compiler performance. A possible solution to this problem is either fixing the RISCV compiler to reduce the number of indirect branches and improve the inlining or improve the branch predictor accuracy on indirect branches. 
 
