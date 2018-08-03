@@ -49,6 +49,7 @@ Dynamic icount is also computed in QEMU by modifying the source code to be able 
 gem5 is a well-known, open-source, cycle-accurate simulator which can simulate in-order and out-of-order cores, memory systems, and interconnect in details. Using gem5 enables us to find runtime statistics (e.g total number of cycles) and micro-architecture related statistics (e.g. cache miss rate). gem5 supports ARM and very recently RISCV. Unfortunately gem5 only supports an old version of MIPS and hence we removed the analysis for MIPS in gem5. To have a fair comparison, processor and memory system configurations (i.e. clock rate, issue width, cache levels and size, delays, etc.) are matched for both ARM and RISCV processors. We use a simple single-issue, 4-stage pipeline with no prefetcher and a single-level cache as an in-order core for RISCV and ARM, and use a more sophisticated 4-issue, out-of-order, with a direct/indirect prefetcher and two level caches as an out-of-order core in our experiments. Detailed for these two cores are shown in Table~\ref{t:config}.
 
 \begin{table}[h]
+\centering
 \caption{Simulation configuration for gem5.}
 \begin{tabular}{|c|c|c|}
 \hline
@@ -61,9 +62,9 @@ gem5 is a well-known, open-source, cycle-accurate simulator which can simulate i
 \hline
 \small Shared Caches & \small N/A & \small L2 256KB \\
 \hline
-\small Branch Predictor & \small N/A & \small Tournament BP and BTB \\
+\small BranchPred & \small Tournament BP & \small Tournament BP\\
 \hline
-\small Prefetcher & \small N/A & \small stride/next-line prefetcher \\
+\small Prefetcher & \small N/A & \small stride/next-line \\
 \hline
 \end{tabular}
 \label{t:config}
@@ -82,6 +83,13 @@ McPAT is an integrated power and area modeling simulator. It uses ITRS roadmap m
 We use a representative set of applications from a standard open-source embedded system's benchmark suite called MiBench. The MiBench suite is commonly used to evaluate the performance of processors intended for the embedded/IoT market, and it was designed to be representative of the computation that is needed in that market (e.g. automotive, industrial systems, etc.). These applications are mostly compute intensive and designed such that have minimum interactions with outside the processors. Many of the applications are also overlapped with EEMBC benchmark suite. 
 
 Our applications we picked ranges from basic math abilities (\textit{basicmath}), bit manipulation (\textit{bitcount}), simple data organization (\textit{qsort}), a shape recognition program (\textit{susan}), shortest path calculations (\textit{dijkstra}), to data encryption, decryption and hashing (\textit{blowfish, rijandael, sha}), and communications applications (\textit{fft, crc32, adpcm}). In addition to these 11 applications picked from MiBench, we use two well-known open-source application which often used in industry to report the performance of the processor \textit{Coremark} and \textit{Dhrystone}. For each of these applications the ``large'' dataset is used. For Coremark and Dhrystone, iterations are chosen such that the total number of executed instructions be more than 200 million instructions (we chose 1000 iterations for Coremark and 1 million iterations for Dhrystone). For each application, same inputs are used for all runs across different ISAs/processors. 
+
+\subsection{Limitations and Challenges}
+Clearly our study is very dependent on correctness, accuracy, and availability of several different tools.  During this study, we encountered infrastructure and system challenges including library dependencies for cross-compilation, library support in QEMU and gem5 as well as ISAs availability in these tools (e.g. MIPS for gem5). Furthermore, this study becomes even more challenging due to very dynamic state of RISCV's toolchain and ecosystem development where still several features both in ISA itself and its toolchain is evolving.  Throughout
+our work, we focus on what we believe to be the first-order effects for performance,
+power, and energy and feel our analysis and methodology is rigorous. We believe we did our best to compare these architectures fairly by using same set of tools and using same applications with same inputs and same default flags for compilations. Other
+more detailed methods may exist, and we will make the data, toolchains, and scripts publicly available to allow interested readers to pursue
+their own detailed analysis.
 
    
  
