@@ -11,12 +11,12 @@ tuning is disabled so there is a single set of binaries for each ISA. For MIPS, 
 
 \begin{table}[h]
 \centering
-\caption{Details for ISAs used to study in this paper.}
+\caption{ISAs used in this study.}
 \begin{tabular}{|c|c|}
 \hline
 %\multicolumn{3}{ |c| }{Team sheet} \\
-\small ISA & \small Specification \\
-\hline
+\textbf{ISAs} & \textbf{Specification} \\
+\hline \hline
 \small ARM & \small  32v7, 64v8 (AARCH) \\
 \hline
 \small MIPS & \small 32r6, 64r6 \\
@@ -47,12 +47,12 @@ Dynamic icount is also computed in QEMU by modifying the source code to be able 
 gem5 is a well-known, open-source, cycle-accurate simulator which can simulate in-order and out-of-order cores, memory systems, and interconnect in details. Using gem5 enables us to find runtime statistics (e.g total number of cycles) and micro-architecture related statistics (e.g. cache miss rate). gem5 supports ARM and very recently RISCV. Unfortunately gem5 only supports an old version of MIPS and hence we removed the analysis for MIPS in gem5. To have a fair comparison, processor and memory system configurations (i.e. clock rate, issue width, cache levels and size, delays, etc.) are matched for both ARM and RISCV processors. We use a simple single-issue, 4-stage pipeline with no prefetcher and a single-level cache as an in-order core for RISCV and ARM, and use a more sophisticated 4-issue, out-of-order, with a direct/indirect prefetcher and two level caches as an out-of-order core in our experiments. Detailed for these two cores are shown in Table~\ref{t:config}.
 
 \begin{table}[h]
-\caption{Simulation Configuration for gem5.}
+\caption{Simulation configuration for gem5.}
 \begin{tabular}{|c|c|c|}
 \hline
 %\multicolumn{3}{ |c| }{Team sheet} \\
-\small Cores &\small In-Order &\small Out-of-Order \\
-\hline
+\small \textbf{Parameters} &\small \textbf{In-order core} &\small \textbf{Out-of-Order core} \\
+\hline \hline
 \small Issue Width & \small 1 & \small 4 \\
 \hline
 \small Private Caches & \small I\$/D\$ 32KB & \small I\$/D\$ 32KB\\
