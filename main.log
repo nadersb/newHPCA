@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.1)  2 AUG 2018 22:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6745 64-bit) (preloaded format=pdflatex 2018.8.1)  3 AUG 2018 14:36
 entering extended mode
 **./main.tex
 (main.tex
@@ -1459,9 +1459,26 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 LaTeX Warning: No \author given.
 
-(sections/abstract.tex) (sections/intro.tex
-Overfull \hbox (1.60707pt too wide) in paragraph at lines 12--13
-\T1/aer/m/n/10 area. We show which of these met-rics are ISA-dependent
+(sections/abstract.tex
+Overfull \hbox (14.60458pt too wide) in paragraph at lines 10--11
+[]\T1/aer/bx/n/10 Keywords: \T1/aer/m/n/10 RISC-V, ARM, MIPS, Per-for-mance, Po
+wer,
+ []
+
+) (sections/intro.tex
+
+LaTeX Warning: Citation `risc-v' on page \thepage  undefined on input line 3.
+
+
+LaTeX Warning: Citation `x86-isa' on page \thepage  undefined on input line 5.
+
+
+LaTeX Warning: Citation `arm-isa' on page \thepage  undefined on input line 5.
+
+
+Overfull \hbox (20.89673pt too wide) in paragraph at lines 11--12
+\T1/aer/m/n/10 atic mea-sure-ment cam-paign us-ing sev-eral dif-fer-ent toolcha
+ins
  []
 
 
@@ -1472,128 +1489,178 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ])
 (sections/background.tex
-Overfull \hbox (3.56648pt too wide) in paragraph at lines 2--3
+Overfull \hbox (3.56648pt too wide) in paragraph at lines 3--4
 []\T1/aer/m/n/10 RISC-V is an emerg-ing open-source soft-ware and hard-
  []
 
 ) (sections/method.tex
-Overfull \hbox (21.95612pt too wide) in paragraph at lines 32--33
+Overfull \hbox (21.95612pt too wide) in paragraph at lines 34--35
 []\T1/aer/m/n/10 To find the dy-namic and static in-struc-tion count (\T1/aer/m
 /sc/10 icount\T1/aer/m/n/10 ),
  []
 
 
-Overfull \hbox (3.43181pt too wide) in paragraph at lines 40--41
+Overfull \hbox (3.43181pt too wide) in paragraph at lines 42--43
 \T1/aer/bx/n/10 Dynamic In-struc-tion Count\T1/aer/m/n/10 : Sim-i-lar to static
  icount,
  []
 
 
-Overfull \hbox (3.50108pt too wide) in paragraph at lines 47--48
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Overfull \hbox (3.50108pt too wide) in paragraph at lines 49--50
 []\T1/aer/m/n/10 gem5 is a well-known, open-source, cycle-accurate sim-
  []
 
 
-Overfull \hbox (5.31682pt too wide) in paragraph at lines 47--48
+Overfull \hbox (5.31682pt too wide) in paragraph at lines 49--50
 \T1/aer/m/n/10 u-la-tor which can sim-u-late in-order and out-of-order cores,
  []
 
 
-Underfull \vbox (badness 4279) has occurred while \output is active []
-
- [2]
-Overfull \hbox (12.18907pt too wide) in paragraph at lines 51--68
+Overfull \hbox (12.18907pt too wide) in paragraph at lines 53--70
 [][]
  []
 
 
-Overfull \hbox (6.06877pt too wide) in paragraph at lines 72--73
+Overfull \hbox (6.06877pt too wide) in paragraph at lines 74--75
 \T1/aer/m/n/10 pacts on them, we check sev-eral microarchitecture-related
  []
 
 
-Overfull \hbox (1.69627pt too wide) in paragraph at lines 75--76
+Overfull \hbox (1.69627pt too wide) in paragraph at lines 77--78
 \T1/aer/m/n/10 microarchitecture-related statis-tics gen-er-ated by a cycle-
  []
 
 
-Overfull \hbox (9.87651pt too wide) in paragraph at lines 80--81
+Overfull \hbox (9.87651pt too wide) in paragraph at lines 82--83
 \T1/aer/m/n/10 stan-dard open-source em-bed-ded sys-tem's bench-mark suite
  []
 
 
-Overfull \hbox (4.4701pt too wide) in paragraph at lines 80--81
+Overfull \hbox (4.4701pt too wide) in paragraph at lines 82--83
 \T1/aer/m/n/10 mar-ket (e.g. au-to-mo-tive, in-dus-trial sys-tems, etc.). These
 
  []
 
 
-Overfull \hbox (11.6771pt too wide) in paragraph at lines 82--83
+Overfull \hbox (11.6771pt too wide) in paragraph at lines 84--85
 \T1/aer/m/it/10 jan-dael, sha\T1/aer/m/n/10 ), and com-mu-ni-ca-tions ap-pli-ca
 -tions (\T1/aer/m/it/10 fft, crc32,
  []
 
 ) (sections/res.tex
-Overfull \hbox (10.12039pt too wide) in paragraph at lines 1--2
+Overfull \hbox (10.12039pt too wide) in paragraph at lines 4--5
 \T1/aer/m/n/10 static and dy-namic in-struc-tion count, per-for-mance, power,
  []
 
 
-Overfull \hbox (3.057pt too wide) in paragraph at lines 4--5
+Overfull \hbox (3.057pt too wide) in paragraph at lines 7--8
 []\T1/aer/m/n/10 Figure [][]1[][] shows the static icount ob-tained from QEMU.
  []
 
-<figures/static.pdf, id=86, 466.74374pt x 226.8475pt>
+<figures/static.pdf, id=99, 873.2625pt x 225.84375pt>
 File: figures/static.pdf Graphic file (type pdf)
 <use figures/static.pdf>
-Package pdftex.def Info: figures/static.pdf  used on input line 9.
-(pdftex.def)             Requested size: 432.00073pt x 209.9691pt.
-<figures/dynamic.pdf, id=87, 462.72874pt x 226.8475pt>
+Package pdftex.def Info: figures/static.pdf  used on input line 12.
+(pdftex.def)             Requested size: 455.99854pt x 117.92876pt.
+<figures/dynamic.pdf, id=100, 462.72874pt x 226.8475pt>
 File: figures/dynamic.pdf Graphic file (type pdf)
 <use figures/dynamic.pdf>
-Package pdftex.def Info: figures/dynamic.pdf  used on input line 18.
-(pdftex.def)             Requested size: 432.00073pt x 211.78633pt.
+Package pdftex.def Info: figures/dynamic.pdf  used on input line 21.
+(pdftex.def)             Requested size: 240.0pt x 117.65677pt.
 
-Overfull \hbox (5.78444pt too wide) in paragraph at lines 24--25
+Underfull \hbox (badness 2318) in paragraph at lines 22--22
+[]\T1/aer/bx/n/10 Figure 2: []Dynamic In-struc-tion Count for
+ []
+
+
+Overfull \hbox (5.78444pt too wide) in paragraph at lines 27--28
 \T1/aer/m/n/10 in-struc-tions to the base ISA (RV-G) for high-performance
  []
 
 [3]
-<figures/code.pdf, id=97, 185.30952pt x 337.83344pt>
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
+
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 39.
+
+<figures/code.pdf, id=110, 175.49155pt x 333.49263pt>
 File: figures/code.pdf Graphic file (type pdf)
 <use figures/code.pdf>
-Package pdftex.def Info: figures/code.pdf  used on input line 29.
-(pdftex.def)             Requested size: 215.99854pt x 393.80467pt.
-) (sections/conc.tex)
-Overfull \hbox (4.68675pt too wide) in paragraph at lines 2--145
+Package pdftex.def Info: figures/code.pdf  used on input line 42.
+(pdftex.def)             Requested size: 192.00073pt x 364.87878pt.
+<figures/cyc.pdf, id=111, 774.895pt x 215.80624pt>
+File: figures/cyc.pdf Graphic file (type pdf)
+<use figures/cyc.pdf>
+Package pdftex.def Info: figures/cyc.pdf  used on input line 51.
+(pdftex.def)             Requested size: 455.99854pt x 126.99529pt.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 57.
+
+<figures/libc.pdf, id=112, 911.50829pt x 668.96426pt>
+File: figures/libc.pdf Graphic file (type pdf)
+<use figures/libc.pdf>
+Package pdftex.def Info: figures/libc.pdf  used on input line 60.
+(pdftex.def)             Requested size: 240.0pt x 176.13144pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./figures/static.pdf> <./figures/dynamic.pdf> <./figures/code.pdf>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 72.
+
+<figures/ipc.pdf, id=230, 430.60875pt x 217.81375pt>
+File: figures/ipc.pdf Graphic file (type pdf)
+<use figures/ipc.pdf>
+Package pdftex.def Info: figures/ipc.pdf  used on input line 75.
+(pdftex.def)             Requested size: 240.0pt x 121.39987pt.
+
+Underfull \hbox (badness 1184) in paragraph at lines 76--76
+[]\T1/aer/bx/n/10 Figure 6: []Instruction per Cy-cle (IPC) for
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./figures/cyc.pdf> <./figures/libc.pdf> <./figures/ipc.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+) (sections/related.tex) (sections/conc.tex)
+Overfull \hbox (4.68675pt too wide) in paragraph at lines 3--145
 \T1/aer/m/it/10 gem5 \T1/aer/m/n/10 for mi-croar-chi-tec-tural sim-u-la-tions. 
 We also present
  []
 
 (main.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 461.
- [4
+ [6
 
- <./figures/static.pdf>] [5 <./figures/dynamic.pdf>] [6
-
-
- <./figures/code.pdf>]
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 461.
  (main.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 461.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 461.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 116610A867D99E31ECF956F5CD9FD24E;792.
+(rerunfilecheck)             Checksum: 07076B49BCA0AC1731DDB0AEC49108D5;926.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 461.
  ) 
 Here is how much of TeX's memory you used:
- 41788 strings out of 492973
- 965089 string characters out of 3135927
+ 41822 strings out of 492973
+ 965693 string characters out of 3135927
  1099592 words of memory out of 3000000
- 45031 multiletter control sequences out of 15000+200000
+ 45054 multiletter control sequences out of 15000+200000
  582325 words of font info for 86 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,96p,1615b,734s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,12n,96p,1040b,734s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
@@ -1603,9 +1670,9 @@ nts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 386518 bytes).
+Output written on main.pdf (6 pages, 443154 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 140 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 386 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
