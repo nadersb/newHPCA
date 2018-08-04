@@ -35,27 +35,39 @@
 \newlabel{t:config}{{2}{3}{Simulation configuration for gem5}{table.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}McPAT}{3}{subsubsection.3.2.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Applications}{3}{subsection.3.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Experimental Analysis}{3}{section.4}}
-\newlabel{sec:expt}{{4}{3}{Experimental Analysis}{section.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Instruction Count}{3}{subsection.4.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Static Instruction Count for MiBench applications using QEMU. Results are normalized w.r.t. RISCV64. The average number of static instructions is about 5000 for these benchmarks.}}{4}{figure.1}}
-\newlabel{fig:static}{{1}{4}{Static Instruction Count for MiBench applications using QEMU. Results are normalized w.r.t. RISCV64. The average number of static instructions is about 5000 for these benchmarks}{figure.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Dynamic Instruction Count for MiBench applications using QEMU. Results are normalized w.r.t. RISCV64. The average number of dynamic instructions for these benchmarks is about 450 million.}}{4}{figure.2}}
-\newlabel{fig:dynamic}{{2}{4}{Dynamic Instruction Count for MiBench applications using QEMU. Results are normalized w.r.t. RISCV64. The average number of dynamic instructions for these benchmarks is about 450 million}{figure.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces A code snippet in assembly showing a same function from Mibench benchmark suite for ARM-64 and RISCV-64 ISAs. Differences shown in rectangles.}}{4}{figure.3}}
-\newlabel{fig:code}{{3}{4}{A code snippet in assembly showing a same function from Mibench benchmark suite for ARM-64 and RISCV-64 ISAs. Differences shown in rectangles}{figure.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Total number of cycles for RISCV and ARM cores (lower is better). Results are normalized w.r.t. RISCV-Out-of-Order core. The average number of cycles is about 300 million for OoO cores and 1 billion for In-Order cores.}}{5}{figure.4}}
-\newlabel{fig:totCyc}{{4}{5}{Total number of cycles for RISCV and ARM cores (lower is better). Results are normalized w.r.t. RISCV-Out-of-Order core. The average number of cycles is about 300 million for OoO cores and 1 billion for In-Order cores}{figure.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces A code snippet in C showing a same IO subroutine implemented in glibc for ARM, MIPS, and RISCV. Differences shown in red.}}{5}{figure.5}}
-\newlabel{fig:libc}{{5}{5}{A code snippet in C showing a same IO subroutine implemented in glibc for ARM, MIPS, and RISCV. Differences shown in red}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Limitations and Challenges}{4}{subsection.3.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experimental Analysis}{4}{section.4}}
+\newlabel{sec:expt}{{4}{4}{Experimental Analysis}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Instruction Count and Mix}{4}{subsection.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces A code snippet in assembly showing a same function from Mibench benchmark suite for ARM-64 and RISCV-64 ISAs. Differences shown in rectangles.}}{4}{figure.4}}
+\newlabel{fig:code}{{4}{4}{A code snippet in assembly showing a same function from Mibench benchmark suite for ARM-64 and RISCV-64 ISAs. Differences shown in rectangles}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Static Instruction Count for MiBench applications using QEMU. Results are normalized w.r.t. RISCV64. The average number of static instructions is about 5000 for these benchmarks.}}{5}{figure.1}}
+\newlabel{fig:static}{{1}{5}{Static Instruction Count for MiBench applications using QEMU. Results are normalized w.r.t. RISCV64. The average number of static instructions is about 5000 for these benchmarks}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Dynamic Instruction Count for MiBench applications using QEMU. Results are normalized w.r.t. RISCV64. The average number of dynamic instructions for these benchmarks is about 450 million.}}{5}{figure.2}}
+\newlabel{fig:dynamic}{{2}{5}{Dynamic Instruction Count for MiBench applications using QEMU. Results are normalized w.r.t. RISCV64. The average number of dynamic instructions for these benchmarks is about 450 million}{figure.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Performance}{5}{subsection.4.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Instruction per Cycle (IPC) for RISCV and ARM out-of-order cores.}}{5}{figure.6}}
-\newlabel{fig:ipc}{{6}{5}{Instruction per Cycle (IPC) for RISCV and ARM out-of-order cores}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces A code snippet in C showing a same IO subroutine implemented in glibc for ARM, MIPS, and RISCV. Differences shown in red.}}{5}{figure.7}}
+\newlabel{fig:libc}{{7}{5}{A code snippet in C showing a same IO subroutine implemented in glibc for ARM, MIPS, and RISCV. Differences shown in red}{figure.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Instruction mix for RISCV and ARM ISAs.}}{6}{figure.3}}
+\newlabel{fig:mix}{{3}{6}{Instruction mix for RISCV and ARM ISAs}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Total number of cycles for RISCV and ARM cores (lower is better). Results are normalized w.r.t. RISCV-Out-of-Order core. The average number of cycles is about 300 million for OoO cores and 1 billion for In-Order cores.}}{6}{figure.5}}
+\newlabel{fig:totCyc}{{5}{6}{Total number of cycles for RISCV and ARM cores (lower is better). Results are normalized w.r.t. RISCV-Out-of-Order core. The average number of cycles is about 300 million for OoO cores and 1 billion for In-Order cores}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Power, Energy, and Area}{6}{subsection.4.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Instruction per Cycle (IPC) for RISCV and ARM out-of-order cores.}}{7}{figure.6}}
+\newlabel{fig:ipc}{{6}{7}{Instruction per Cycle (IPC) for RISCV and ARM out-of-order cores}{figure.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Dynamic Power for RISCV and ARM out-of-order cores (normalized w.r.t. RISCV).}}{7}{figure.8}}
+\newlabel{fig:pow}{{8}{7}{Dynamic Power for RISCV and ARM out-of-order cores (normalized w.r.t. RISCV)}{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Energy for RISCV and ARM out-of-order cores (normalized w.r.t. RISCV).}}{7}{figure.9}}
+\newlabel{fig:ener}{{9}{7}{Energy for RISCV and ARM out-of-order cores (normalized w.r.t. RISCV)}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Coremark and Dhrystone dynamic instruction counts for RISCV and ARM ISA.}}{7}{figure.10}}
+\newlabel{fig:coreinst}{{10}{7}{Coremark and Dhrystone dynamic instruction counts for RISCV and ARM ISA}{figure.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Dhrystone and Coremark}{7}{subsection.4.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Related Work}{7}{section.5}}
+\newlabel{sec:related}{{5}{7}{Related Work}{section.5}{}}
 \bibstyle{ieeetr}
 \bibdata{ref}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Power and Performance}{6}{subsection.4.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Related Work}{6}{section.5}}
-\newlabel{sec:related}{{5}{6}{Related Work}{section.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{6}{section.6}}
-\newlabel{sec:conc}{{6}{6}{Conclusions}{section.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}References}{6}{section.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Dhrystone and Coremark cycle count (lower is better) for RISCV and ARM in-order cores (with and without branch predictor).}}{8}{figure.11}}
+\newlabel{fig:coreperf}{{11}{8}{Dhrystone and Coremark cycle count (lower is better) for RISCV and ARM in-order cores (with and without branch predictor)}{figure.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusions}{8}{section.6}}
+\newlabel{sec:conc}{{6}{8}{Conclusions}{section.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}References}{8}{section.7}}
